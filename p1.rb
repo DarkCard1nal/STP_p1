@@ -26,7 +26,7 @@ elsif input.casecmp(options[1]).zero?
 	number = 2
 elsif input.casecmp(options[2]).zero?
 	number = 3
-elsif !input.to_i.zero?
+elsif input.to_i.positive? && input.to_i < 4
 	number = input.to_i
 else
 	puts 'Input error, check if the input is correct'
